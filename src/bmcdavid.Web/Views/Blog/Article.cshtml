@@ -1,0 +1,8 @@
+﻿@model BlogArticleViewModel
+
+<article>
+    <h1 class="pt-2 pb-2">@Model.PageTitle</h1>
+    <span class="date pr-4">@Model.Blog.Date.ToShortDateString()</span>
+    <span class="oi oi-tag"></span><partial name="Tags" model="@Model.Blog.Tags" />
+    <div class="pt-3">@Html.Raw(Model.Blog.Body)</div>
+</article>

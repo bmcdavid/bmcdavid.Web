@@ -1,0 +1,43 @@
+﻿{
+  "bundles": [
+    {
+      "filename": "site.css",
+      "resources": [
+        //"./node_modules/bootstrap/dist/css/bootstrap.css",
+        "./temp/build/sass/style.css",
+        "./css/blog.css"
+      ]
+    },
+    {
+      "filename": "site.js",
+      "resources": [
+        "./node_modules/jquery/dist/jquery.js",
+        "./node_modules/bootstrap/dist/js/bootstrap.bundle.js"
+      ]
+    }
+  ],
+  "directories": {
+    "assets": [
+      {
+        "dest": "./wwwroot/compiled/fonts/",
+        "src": "./node_modules/open-iconic/font/fonts/*"
+      }
+    ],
+    "cleanCss": [ "./wwwroot/compiled/**/*.css" ],
+    "cleanJs": [ "./wwwroot/compiled/**/*.js" ],
+    "release": "./wwwroot/compiled/",
+    "temp": "./temp/build/",
+    "watch": [
+      {
+        "src": [ "css/*.css" ],
+        "tasks": [ "build:css" ]
+      }
+    ]
+  },
+  "sass": {
+    "filename": "sass/style.css",
+    "includePaths": [
+    ],
+    "main": "./css/sass/main.scss"
+  }
+}

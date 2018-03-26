@@ -1,0 +1,10 @@
+﻿$icon-font-path: "/compiled/fonts/";
+$theme-colors: ( "primary": #948c75, "secondary":#d5ded9, "dark": #7a6a53, "forever": #99b2b7, "pachyderm": #7a6a53);
+// #D9CEb2 innocence
+// #948c75 kind giant
+// #d5ded9 bond
+// #7a6a53 pachyderm
+// #99b2b7 forever
+
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/open-iconic/font/css/open-iconic-bootstrap.scss";
